@@ -8,7 +8,7 @@ ESP_ENABLED  = false
 _G.FREE_FOR_ALL = true
  
 _G.ESP_BIND    = 52
-_G.CHANGE_AIM  = 'q'
+_G.CHANGE_AIM  = 'p'
  
 _G.AIM_AT = 'Head'
  
@@ -101,6 +101,20 @@ GUI_AIM_AT.TextStrokeTransparency  = 1
 GUI_AIM_AT.TextWrapped             = true
 GUI_AIM_AT.FontSize                = 'Size18'
 GUI_AIM_AT.Font                    = 'SourceSansBold'
+
+-- Adding the new TextLabel for "Made by Perry"
+GUI_CREDITS = Instance.new('TextLabel', GUI_MAIN)
+GUI_CREDITS.Size                   = UDim2.new(0,200,0,20)
+GUI_CREDITS.BackgroundTransparency = 0.5
+GUI_CREDITS.BackgroundColor        = BrickColor.new('Fossil')
+GUI_CREDITS.BorderSizePixel        = 0
+GUI_CREDITS.Position               = UDim2.new(0.5,-100,0,60)
+GUI_CREDITS.Text                   = 'Made by Discord: perrydv'
+GUI_CREDITS.TextColor3             = Color3.new(1,1,1)
+GUI_CREDITS.TextStrokeTransparency = 1
+GUI_CREDITS.TextWrapped            = true
+GUI_CREDITS.FontSize               = 'Size18'
+GUI_CREDITS.Font                   = 'SourceSansBold'
  
 local TRACK = false
  
@@ -197,6 +211,8 @@ MOUSE.KeyDown:connect(function(KEY)
 			print('ESP : OFF')
 		end
 	end
+
+
 end)
  
 MOUSE.KeyDown:connect(function(KEY)
